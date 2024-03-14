@@ -13,9 +13,14 @@ public class ItemController : Controller
         return View();
     }
 
-    public string AddItem(string name, int ID = 1)
+    // public string AddItem(string name, int ID = 1)
+    // {
+    //     return HtmlEncoder.Default.Encode($"Hello {name}, Id: {ID}");
+    // }
+
+    public IActionResult AddItem()
     {
-        return HtmlEncoder.Default.Encode($"Hello {name}, Id: {ID}");
+        return View();
     }
 
 
