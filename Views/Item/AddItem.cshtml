@@ -6,32 +6,50 @@
 <html>
 <head>
     <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <h2>Add Items to Store</h2>
-    <form method="post" action="@Url.Action("AddItems", "Store")">
-        <div>
-            <label for="itemName">Item Name:</label>
-            <input type="text" id="itemName" name="itemName" required />
-        </div>
-        <div>
-            <label for="itemDescription">Item Description:</label>
-            <textarea id="itemDescription" name="itemDescription"></textarea>
-        </div>
-        <div>
-            <label for="itemPrice">Item Price:</label>
-            <input type="number" id="itemPrice" name="itemPrice" step="0.01" required />
-        </div>
-        <div>
-            <label for="itemQuantity">Item Quantity:</label>
-            <input type="number" id="itemQuantity" name="itemQuantity" required />
-        </div>
-        <div>
-            <button type="submit">Add Item</button>
-        </div>
-        <div>
-            <a asp-area="" asp-controller="Item" asp-action="Index">back</a>
-        </div>
-    </form>
+    <div class="container">
+        <h2 class="my-4">Add Items to Store</h2>
+        <form method="post" action="@Url.Action("AddItems", "Store")">
+            <div class="form-group">
+                <label for="itemName">Item Name:</label>
+                <input type="text" class="form-control" id="itemName" name="itemName" required />
+            </div>
+            <div class="form-group">
+                <label for="itemDescription">Item Description:</label>
+                <textarea class="form-control" id="itemDescription" name="itemDescription"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="itemColor">Item Color:</label>
+                <input type="text" class="form-control" id="itemColor" name="itemColor" step="0.01" required />
+            </div>
+            <div class="form-group">
+                <label for="itemPrice">Item Price:</label>
+                <input type="number" class="form-control" id="itemPrice" name="itemPrice" step="0.01" required />
+            </div>
+            <div class="form-group">
+                <label for="itemQuantity">Item Quantity:</label>
+                <input type="number" class="form-control" id="itemQuantity" name="itemQuantity" required />
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <a asp-area="" asp-controller="Item" asp-action="Index" class="btn btn-secondary btn-block">Back</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">Add Item</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
