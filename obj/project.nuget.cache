@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O7apqqtr1XAULzqA6XdN6TC4oVXbvtUBDB9u7pdnAmxD9MVzgYNEpTl1svoDHfmmdkMlNs0X3ADvyzlSYsv9kQ==",
+  "dgSpecHash": "yqSJQk4jkAiUjuPoe+kq0KJ6VD2zlw/OcgO5h9WM7y0TI26eAHVbXBkS3kdXs5eacTbr8M/igjSJorpKndFQnw==",
   "success": true,
-  "projectFilePath": "F:\\ASP.Net Project\\Ecommerce\\Ecommerce.csproj",
+  "projectFilePath": "F:\\pull_asp_test\\aspdotnet\\Ecommerce.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

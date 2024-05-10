@@ -9,47 +9,47 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Ecommerce
 build_property.RootNamespace = Ecommerce
-build_property.ProjectDir = F:\ASP.Net Project\Ecommerce\
+build_property.ProjectDir = F:\pull_asp_test\aspdotnet\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = F:\ASP.Net Project\Ecommerce
+build_property.MSBuildProjectDirectory = F:\pull_asp_test\aspdotnet
 build_property._RazorSourceGeneratorDebug = 
 
-[F:/ASP.Net Project/Ecommerce/Views/Home/Index.cshtml]
+[F:/pull_asp_test/aspdotnet/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ASP.Net Project/Ecommerce/Views/Home/Privacy.cshtml]
+[F:/pull_asp_test/aspdotnet/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ASP.Net Project/Ecommerce/Views/Item/AddItem.cshtml]
+[F:/pull_asp_test/aspdotnet/Views/Item/AddItem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxBZGRJdGVtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ASP.Net Project/Ecommerce/Views/Item/Index.cshtml]
+[F:/pull_asp_test/aspdotnet/Views/Item/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ASP.Net Project/Ecommerce/Views/Shared/Error.cshtml]
+[F:/pull_asp_test/aspdotnet/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ASP.Net Project/Ecommerce/Views/Shared/_ValidationScriptsPartial.cshtml]
+[F:/pull_asp_test/aspdotnet/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ASP.Net Project/Ecommerce/Views/_ViewImports.cshtml]
+[F:/pull_asp_test/aspdotnet/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ASP.Net Project/Ecommerce/Views/_ViewStart.cshtml]
+[F:/pull_asp_test/aspdotnet/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ASP.Net Project/Ecommerce/Views/Shared/_Layout.cshtml]
+[F:/pull_asp_test/aspdotnet/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-jnmo08unka

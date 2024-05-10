@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\ASP.Net Project\\Ecommerce\\Ecommerce.csproj": {}
+    "F:\\pull_asp_test\\aspdotnet\\Ecommerce.csproj": {}
   },
   "projects": {
-    "F:\\ASP.Net Project\\Ecommerce\\Ecommerce.csproj": {
+    "F:\\pull_asp_test\\aspdotnet\\Ecommerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\ASP.Net Project\\Ecommerce\\Ecommerce.csproj",
+        "projectUniqueName": "F:\\pull_asp_test\\aspdotnet\\Ecommerce.csproj",
         "projectName": "Ecommerce",
-        "projectPath": "F:\\ASP.Net Project\\Ecommerce\\Ecommerce.csproj",
+        "projectPath": "F:\\pull_asp_test\\aspdotnet\\Ecommerce.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "F:\\ASP.Net Project\\Ecommerce\\obj\\",
+        "outputPath": "F:\\pull_asp_test\\aspdotnet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
