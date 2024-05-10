@@ -1,0 +1,69 @@
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ReSharper files
+_ReSharper*/
+*.resharper
+*.DotSettings.user
+
+# NuGet
+packages/
+*.nupkg
+*.paket.restore.log
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio code files
+.vscode/
+
+# Rider files
+.idea/
+
+# Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Resharper Cache
+*.resharper
+
+# NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+
+# Coveralls coverage reporting
+**/coveral*
+
+# Microsoft Azure Build Pipeline
+azure-pipelines.yml
+
+# Miscellaneous
+node_modules/
+Thumbs.db
+*.dbmdl
+*.[Pp]ublish.xml
+*.pfx
+*.publishsettings
+npm-debug.log

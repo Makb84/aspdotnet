@@ -25,9 +25,9 @@ public class ItemController : Controller
 
 
     [AllowAnonymous]
-    public string AddItem2(string name, int ID = 1)
+    public IActionResult ShowItems()
 
     {
-        return HtmlEncoder.Default.Encode($"apple {name}");
+        return View();
     }
 }
