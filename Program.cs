@@ -40,10 +40,11 @@ else
     builder.Configuration.AddJsonFile(settingsFile, optional: true);
 }
 
-var connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING") ?? "Data Source=mydatabase.db";
+// Retrieve SQLite connection string from environment variables
+var connectionString = Environment.GetEnvironmentVariable("SQLITE_CONNECTION_STRING") ?? "Data Source=mydatabase.db";
 
 builder.Services.AddDbContext<MvcItemEditContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("MvcItemEditContext") ?? throw new InvalidOperationException("Connection string 'MvcItemEditContext' not found.")));
+    options.UseSqlite(connectionString));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
