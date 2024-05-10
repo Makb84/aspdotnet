@@ -4,24 +4,40 @@ using MvcEcommerce.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using System;
+using System.IO;
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Load configuration based on environment
 if (builder.Environment.IsDevelopment())
 {
-    builder.Configuration.AddJsonFile("appsettings.Development.json", optional: true);
+    // Check if appsettings.Development.json exists, if not, create it with the default connection string
+    var devSettingsFile = "appsettings.Development.json";
+    if (!File.Exists(devSettingsFile))
+    {
+        var defaultSettings = new { ConnectionStrings = new { MvcItemEditContext = "Data Source=sqdb.db;" } };
+        var options = new JsonSerializerOptions { WriteIndented = true };
+        var json = JsonSerializer.Serialize(defaultSettings, options);
+        File.WriteAllText(devSettingsFile, json);
+    }
+
+    builder.Configuration.AddJsonFile(devSettingsFile, optional: true);
 }
 else
 {
-    // Use default connection string for production
-    var defaultConnectionString = new Dictionary<string, string>
+    // Check if appsettings.json exists, if not, create it with the default connection string
+    var settingsFile = "appsettings.json";
+    if (!File.Exists(settingsFile))
     {
-        {"ConnectionStrings:MvcItemEditContext", "Data Source=sqdb.db;"}
-    };
+        var defaultSettings = new { ConnectionStrings = new { MvcItemEditContext = "Data Source=sqdb.db;" } };
+        var options = new JsonSerializerOptions { WriteIndented = true };
+        var json = JsonSerializer.Serialize(defaultSettings, options);
+        File.WriteAllText(settingsFile, json);
+    }
 
-    builder.Configuration.AddJsonFile("appsettings.json", optional: true)
-           .AddInMemoryCollection(defaultConnectionString.Select(kv => new KeyValuePair<string, string?>(kv.Key, kv.Value)));
+    builder.Configuration.AddJsonFile(settingsFile, optional: true);
 }
 
 var connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING") ?? "Data Source=mydatabase.db";
